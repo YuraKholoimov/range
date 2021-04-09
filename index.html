@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 10000px;
+        }
+
+        .container {
+            border: solid 1px black;
+            padding: 20px;
+        }
+        .container2 {
+            position: relative;
+            margin-top: 10px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-around ;
+            flex-direction: column;
+            height: 350px;
+            border: solid 1px black;
+            padding: 20px;
+        }
+        .container2 [type="range"] {
+            /* display: flex; */
+            align-self: flex-start;
+            padding: ;
+            
+        }
+        #block {
+            position: absolute;
+            left: 20%;
+            top: 30%;
+            background: maroon;
+            height: 150px;
+            width: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <label>
+            <input type="radio" name="1" /> JavaScript
+            <input type="radio" name="1" /> JavaScript
+            <input type="radio" name="1" /> JavaScript
+            <input type="radio" name="1" /> JavaScript
+        </label>
+        <br>
+        <input type="range" min='0' max='100' step='1'>
+        <input type="text">
+    </div>
+
+    <div class="container2">
+        <input id="tl" type="range" min="0" max="100" value="0">TOP LEFT ANGLE<input type="text">
+        <input id="tr" type="range" min="0" max="100" value="0">TOP RIGHT ANGLE<input type="text">
+        <input id="bl" type="range" min="0" max="100" value="0">BOTTOM LEFT ANGLE<input type="text">
+        <input id="br" type="range" min="0" max="100" value="0">BOTTOB RIGHT ANGLE<input type="text">
+        <div id="block"></div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
